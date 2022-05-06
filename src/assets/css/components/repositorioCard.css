@@ -1,0 +1,83 @@
+@import url('../base/_variaveis.css');
+@import url('../base/_reset.css');
+
+.card {
+    display: flex;
+    padding: 1em 1em;
+    background: var(--cor-de-fundo);
+    border: solid 1px var(--cor-secundaria);
+    color: var(--cor-de-fundo-secundaria);
+    margin-bottom: 1em;
+    margin-right: 0.3em;
+    border-radius: 30px;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.texto_repositorio {
+    display: inline;
+    font-weight: 300;
+}
+
+.divisao {
+    display: inline;
+    font-weight: 300;
+}
+
+.texto_repositorio2 {
+    display: inline;
+    margin: 0.3em;
+    font-weight: bold;
+}
+
+.titulo_card {
+    display: inline;
+    font-weight: bold;
+    margin: 0.2em;
+    color: var(--cor-secundaria)
+} 
+
+.botao_repositorio {
+    background-color: var(--cor-primaria);
+    border: none;
+    margin: 0.3em;
+    padding: 0.3em 0.6em;
+    border-radius: 40px;
+    color: var(--cor-de-fundo);
+    cursor: pointer;
+    font-weight: 300;
+    text-align: center;
+    display: inline;
+    border: dashed 0.5px var(--cor-primaria);
+    transition: 150ms;
+    
+}
+
+.botao_repositorio:hover {
+    font-weight: bold;
+    border: dashed 0.5px var(--cor-de-fundo)
+}
+
+@media (max-width: 1170px) {
+    .card { 
+        flex-wrap: wrap;
+        text-align: center;       
+        flex-direction: column;
+        display: block;
+        margin: 0.5em;
+        width: 100%;
+    }
+
+    .botao_repositorio {
+        margin-top: 0.6em;
+        transform: scale(1.1,1.1);
+    }
+    .card p {
+       display: block;
+    }
+
+    .card .divisao {
+        display: none;
+    }
+}

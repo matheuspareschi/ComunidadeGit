@@ -1,0 +1,78 @@
+@import url('../base/_variaveis.css');
+@import url('../base/_reset.css'); 
+
+.container_usuario{
+    diplay: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 25%;
+    border: solid 1px var(--cor-secundaria) ;
+    border-radius: 40px;
+    padding: 1em;
+    margin-top: 2em;
+    background-color: var(--cor-de-fundo);
+}
+
+.container_usuario2{
+    diplay: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    border: solid 1px var(--cor-secundaria) ;
+    border-radius: 40px;
+    padding: 1em;
+    margin-top: 2em;
+    background-color: var(--cor-de-fundo);
+}
+
+.avatar {
+    margin-bottom: 0.5em;
+    height: 6em;
+    border-radius: 50px;
+}
+
+.texto1_usuario {
+    font-weight: 500;
+    padding: 0.3em;
+}
+
+.texto2_usuario {
+    font-weight: 300;
+    margin-bottom: 1em;
+}
+
+.container_usuario .botao_cardUsuario {
+    font-family:'Inconsolata', monospace;
+    font-weight: bold;
+    color: var(--cor-primaria);
+    border-color: var(--cor-primaria);
+}
+
+
+.botao_cardUsuario:hover {
+    border-color: darkgreen;
+    background-color: #E0FCD0;
+}
+
+.container_usuario2 .botao_cardUsuario2 {
+    font-family:'Inconsolata', monospace;
+    font-weight: bold;
+    color: var(--cor-primaria);
+    border-color: var(--cor-primaria);
+}
+
+
+.botao_cardUsuario2:hover {
+    border-color: darkgreen;
+    background-color: #E0FCD0;
+}
+
+@media (max-width: 1000px){
+    .container_usuario {
+        width: 100%;
+    }
+
+    .container_usuario2 {
+        width: 100%;
+    }
+}

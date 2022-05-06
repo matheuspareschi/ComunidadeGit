@@ -1,0 +1,110 @@
+@import url('../base/_variaveis.css');
+@import url('../base/_reset.css');
+
+.titulo_repositorio{
+    font-weight: 300;
+    text-align: center;
+    padding: 1em;
+}
+
+.barra_opcoes {
+    text-align: center;
+}
+
+.texto_barra {
+    display: inline-block;
+    font-size: 1.2em;
+    padding: 0.3em 0.4em;
+    margin: 0.2em;
+    background-color: var(--cor-secundaria);
+    border-radius: 50px;
+    color : var(--cor-de-fundo);
+    transition: 150ms;
+    cursor: pointer;
+}
+
+.botao_barra {
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    margin: 0.2em;
+    font-size: 1.2em;
+    font-weight: 300;
+    transition: 150ms;
+    padding: 0.3em 0.3em;
+
+}
+
+.botao_barra:hover {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.separacao_barra {
+    display: inline-block;
+}
+
+.wrapper {
+    top: 50%;
+    left: 50%;
+    display: flex;
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
+
+.left {
+    width: 20%;
+    padding: 1em;
+}
+
+.right {
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.texto_aviso {
+    font-weight: 300;
+    font-size: 1.4em;
+    line-height: 1.3em;
+    font-style: italic;
+    text-align: center;
+    padding: 15%;
+}
+
+.paginas {
+   display: flex;
+  justify-content: center;
+  margin: 1rem;
+}
+
+@media (max-width: 1170px) {   
+    .wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+
+    .left {
+        width: 70%;
+    }
+
+    .right {
+        padding: 1em;
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 900px) {   
+    .left {
+        width: 100%;
+    }
+
+    .right {
+        padding: 0.5em;
+        width: 90%;
+        justify-content: center;
+        margin: 0.3em;
+    }
+}

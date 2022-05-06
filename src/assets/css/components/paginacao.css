@@ -1,0 +1,22 @@
+@import url('../base/_variaveis.css');
+@import url('../base/_reset.css');
+
+
+.paginacao button{
+    display: inline-block;
+    font-size: 1.2em;
+    padding: 0.3em 0.4em;
+    margin: 0.2em;
+    background-color: var(--cor-secundaria);
+    border-radius: 50px;
+    font-weight: 300;
+    color : var(--cor-de-fundo);
+    transition: 250ms;
+    cursor: pointer;
+    border: solid 2px var(--cor-secundaria);
+}
+
+.paginacao button:hover{
+  border: dashed 2px white;
+  font-weight: 500;
+}

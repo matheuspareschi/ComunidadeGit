@@ -1,0 +1,89 @@
+@import url('../base/_variaveis.css');
+@import url('../base/_reset.css');
+
+div .container {
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: auto;
+    min-height: 59vh;
+    max-height: fit-content;
+}
+
+.titulo_busca {
+    text-align: center;
+    padding-bottom: 1em;
+    font-size: 3em;
+    font-weight: 300;
+    text-decoration: overline;
+    color: var(--cor-secundaria);
+}
+
+.texto_busca {
+    margin-bottom: 2em;
+    text-align: center;
+    font-weight: 300;
+    color: var(--cor-de-fundo-secundaria);
+}
+
+.caixa_busca {
+    width: 50%; 
+}
+
+.caixa_busca .texto_caixa_busca {
+    font-family: 'Inconsolata', monospace;
+    font-size: 1.4em;
+    padding: 0;
+    margin: 0;
+}
+
+.botoes {
+    justify-content: center;
+    text-align: center;
+}
+
+.container .botao_apagar {
+    margin: 1em;
+    font-family: 'Inconsolata', monospace;
+    font-weight: 300;
+    font-size: 1em;
+    flex-direction: row;
+    border: solid 2px var(--cor-secundaria);
+    transition: 120ms;
+}
+
+.container .botao_apagar:hover {
+    font-weight: bold;
+}
+
+.container .botao_busca {
+    margin: 1em;
+    background-color: var(--cor-primaria);
+    font-family: 'Inconsolata', monospace;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.container .botao_busca:hover {
+    background-color: green;
+}
+
+.texto_erro {
+    font-weight: bold;
+    color: red;
+}
+
+@media (max-width: 1170px){
+    .caixa_busca {
+        width: 80%; 
+    }
+
+    .titulo_busca {
+        text-decoration: none;
+    }
+
+    .titulo_busca::first-line{
+        text-decoration: overline;
+    }
+}

@@ -1,0 +1,94 @@
+@import url('../base/_variaveis.css');
+@import url('../base/_reset.css');
+
+.rodape{
+    background-color: var(--cor-de-fundo-secundaria);
+    padding: 20px 0;
+}
+
+.container_rodape {
+    margin: auto;
+    max-width: 1170px;
+}
+
+.titulo_rodape{
+    color: var(--cor-secundaria);
+    font-weight: 300;
+    font-size: 2em;
+    margin-right: 0.3em;
+}
+
+.logo2 {
+    height: 7em;
+}
+
+.subtitulo_rodape{
+    color: var(--cor-secundaria);
+    margin-bottom: 1em;
+}
+
+.texto_rodape{
+    color: var(--cor-de-fundo);
+    padding: 0 30px;
+    font-weight: 300;
+}
+
+.container_linha {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.rodape_coluna {
+    text-align: center;
+    width: 50%;
+    padding: 0 15px;
+    margin-bottom: 1em;
+}
+
+.legenda {
+    font-size: small;
+    color: var(--cor-de-fundo);
+    font-weight: 300;
+    display: inline;
+    margin-top: 3em;
+    text-align: center;
+}
+
+.compassLogo {
+    height: 1em;
+    font-display: inline;
+    border-radius: 30px;
+}
+
+@media (max-width: 1000px){
+
+    .container_linha{
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rodape_coluna {
+        text-align: center;
+        width: 100%;
+        padding: 0 0.5em;
+    }
+
+    .texto_rodape{
+        padding: 0 20%;
+    }
+
+    .subtitulo_rodape{
+        margin-bottom: 0.3em;
+    }
+    .titulo_rodape{
+        font-size: 1.7em;
+    }
+    .logo2 {
+        margin-top: 0.1em;
+        margin-bottom: 0.5em;
+        height: 5em;
+    }
+}
