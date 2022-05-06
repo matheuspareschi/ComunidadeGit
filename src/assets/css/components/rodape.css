@@ -47,6 +47,10 @@
     margin-bottom: 1em;
 }
 
+.rodape_coluna2 {
+    text-align: center;
+}
+
 .legenda {
     font-size: small;
     color: var(--cor-de-fundo);

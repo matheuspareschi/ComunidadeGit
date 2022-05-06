@@ -17,7 +17,7 @@ const Rodape = () => {
                             Mergulhe no universo do GitHub...
                         </p>
                     </div>  
-                    <div>
+                    <div className='rodape_coluna2'>
                         <p className='legenda'> Projeto desenvolvido por Matheus Pareschi para o programa de bolsas da Compass UOL </p>
                         <img src='images/compassLogo.png' alt='logo da Compass' className="compassLogo" />
                     </div>  
