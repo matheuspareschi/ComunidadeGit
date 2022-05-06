@@ -1,4 +1,3 @@
-=======
 # Comunidade Git
 
 Projeto utiliza React.js para acessar API do GitHub e retornar informações relacionadas ao usuário procurado com seus repositórios públicos e favorios. Desenvolvido para segundo desafio do programa de bolsas da Compass UOL. 
